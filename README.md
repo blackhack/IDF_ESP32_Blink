@@ -1,5 +1,13 @@
 # Example Blink project using IDF and Arduino Esp32 as component
 
+When cloning this repo, remember to update submodules:
+
+git clone --recurse-submodules https://github.com/blackhack/IDF_ESP32_Blink.git
+
+or
+
+git submodule update --init --recursive
+
 ## Directory tree structure:
 
 I recommend the following folder structure for the projects.
