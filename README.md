@@ -44,7 +44,7 @@ For firmware:
 ```
 For spiffs:
 ```
-.\espota.exe -i 192.168.1.95 -s -f -f PROJECT_DIRECTORY/build/spiffs.bin
+.\espota.exe -i <esp_ip> -s -f -f PROJECT_DIRECTORY/build/spiffs.bin
 ```
 
 Because I set this in `main/CMakeLists.txt`: `spiffs_create_partition_image(spiffs ../data FLASH_IN_PROJECT)`
