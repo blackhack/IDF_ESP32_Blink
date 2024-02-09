@@ -1,0 +1,3 @@
+[submodule "components/EUtils"]
+	path = components/EUtils
+	url = https://github.com/blackhack/EUtils.git
