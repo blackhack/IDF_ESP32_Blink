@@ -44,7 +44,7 @@ This folder can also be placed in each project component folder, but I prefer to
 By default, I'm using the same partition table as Arduino ESP32 for 4MB devices. However, this can be modified in partitions.csv. You can refer to partition_table_explanation.xlsx for explanations about sizes, offsets, names, and a basic calculator.
 
 ## OTA Uploads
-To upload via OTA, we need to use `espota.exe` or `espota.py`, wich is located on ```arduino\tools```, for that we use the next commands:
+To upload via OTA, we need to use `espota.exe` or `espota.py`, which are located in `arduino\tools`. Then, we use the following commands:
 
 For firmware:
 ```
@@ -52,9 +52,9 @@ For firmware:
 ```
 For spiffs:
 ```
-.\espota.exe -i <esp_ip> -s -f -f PROJECT_DIRECTORY/build/spiffs.bin
+.\espota.exe -i <esp_ip> -s -f PROJECT_DIRECTORY/build/spiffs.bin
 ```
 
-Because I set this in `main/CMakeLists.txt`: `spiffs_create_partition_image(spiffs ../data FLASH_IN_PROJECT)`
+Because I set this parameter in `main/CMakeLists.txt`: `spiffs_create_partition_image(spiffs ../data FLASH_IN_PROJECT)`
 
-`spiffs.bin` will be automatically generated when building, and even upload if we are flashing via serial.
+`spiffs.bin` file will be automatically generated during the build process and uploaded if we are flashing via serial.
