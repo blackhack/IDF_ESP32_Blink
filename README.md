@@ -28,7 +28,8 @@ IDF_PROJECTS
         │   └── example_spiffs_file.txt
         ├── main
         │   ├── CMakeLists.txt
-        │   └── main.cpp
+        │   ├── main.cpp
+        │   └── sketch.cpp
         ├── partitions.csv
         ├── sdkconfig
         └── ... Rest of folders and files ...
