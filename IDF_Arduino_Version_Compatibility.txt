@@ -1,9 +1,4 @@
 Using Arduino as a component of IDF is extremely sensitive to version compatibility. Therefore, I will state the latest versions that, at the time of testing, are known to work:
 
-IDF: 5.1.4 (https://github.com/espressif/esp-idf/commit/e026fd1f81afc6d19561101b1c8fe0006932cff3)
-Arduino: 3.0.4 (https://github.com/espressif/arduino-esp32/commit/0539ebf322cf9b0620d4a8c357ddc284edc87f64)
-
-Note: At the time of testing, the Rainmaker component had a build error. This can be easily fixed by manually applying one of the following pull requests until they are merged into the repository:
-
-https://github.com/espressif/esp-rainmaker/pull/313/
-https://github.com/espressif/esp-rainmaker/pull/297/
+IDF: 5.3.2 (https://github.com/espressif/esp-idf/releases/tag/v5.3.2)
+Arduino: 3.1.1 (https://github.com/espressif/arduino-esp32/releases/tag/3.1.1)
